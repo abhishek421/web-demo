@@ -33,11 +33,13 @@ body{
     position: sticky;
     top: 0;
     background-image: linear-gradient(white 80%,transparent);
+    transition: top 0.3s;
 }
 
 #navbar-logo{
     float: left;
-    height: 4vw;
+    height: 60px;
+    margin-left: 1vw;
 }
 
 #navbar-links {
@@ -46,8 +48,8 @@ body{
 
 #navbar-links p{
     float: left;
-    padding: 1vw 0;
-    font-size: 1.4vw;
+    padding: 10px 0;
+    font-size: 20px;
     font-weight: 700;
     margin: 0px 1vw;
     color: var(--primary);
@@ -72,8 +74,6 @@ body{
 }
 
 .main2{
-    /* position: relative;
-    top: -8vw; */
     padding: 2vw;
     width: 50%;
     float: right;
@@ -81,7 +81,7 @@ body{
 
 .main-txt{
     color: var(--primary);
-    font-size: 5vw;
+    font-size: 5em;
     font-weight: 700;
     margin-bottom: 2vw;
 }
@@ -89,9 +89,9 @@ body{
 .take-tour{
     background-color: var(--secondary);
     color: white;
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: bold;
-    padding: 0.8vw 0.9vw;
+    padding: 14px;
     border: none;
     border-radius: 50px;
 }
@@ -104,32 +104,30 @@ body{
 
 .vd-head{
     height: 100%;
-    /* margin: 4vw; */
-    /* margin-bottom: 6vw; */
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 .head-txt{
-    font-size: 4vw;
+    font-size: 5em;
     font-weight: 700;
-    margin-bottom: 4vw;
+    margin-bottom: 3vw;
 }
 
 .head-sub{
-    font-size: 2.2vw;
+    font-size: 2.4em;
     font-weight: 600;
 }
 
 .s-bar{
     width: max-content;
-    border-bottom: solid 0.8vw var(--secondary);
+    border-bottom: solid 15px var(--secondary);
 }
 
 .w-bar{
     width: max-content;
-    border-bottom: solid 0.8vw white;
+    border-bottom: solid 15px white;
 }
 
 .vd-roots{
@@ -139,173 +137,185 @@ body{
     background-repeat: no-repeat;
     background-size: 120vw 60vw;
     overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .roots-cnt{
-    padding: 4vw 5vw;
-    margin-top: 12vw;
+    padding: 0vw 5vw 4vw 5vw;
 }
 
 .roots-txt{
-    font-size: 4vw;
+    font-size: 4em;
     font-weight: 700;
     margin-bottom: 4vw;
 }
 
 .roots-sub{
-    font-size: 1.8vw;
+    font-size: 1.4em;
     font-weight: 600;
-    margin-bottom: 4vw;
+    margin-bottom: 2vw;
 }
 
 .know-more{
     background-color: white;
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: bold;
-    padding: 0.8vw 0.9vw;
+    padding: 14px;
     border: none;
     border-radius: 50px;
 }
 
 .vd-services{
-    width: 100%;
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: space-around;
     padding: 2vw;
 }
 
 .serv-illus{
-    width: 30%;
-    float: left;
-    padding: 1vw;
-    margin-top: 0vw;
+    padding: 2em;
+    flex-basis: 35%;
 }
 
 .serv-illus img{
-    float: left;
     max-width: 100%;
     max-height: 100%;
 }
 
 .serv-cnt{
-    width: 70%;
-    float: right;
+    flex-basis: 65%;
 }
 
 
 .serv-txt{
-    font-size: 3.8vw;
+    font-size: 4em;
     font-weight: 700;
     margin-bottom: 3vw;
 }
 
 .serv-sub{
-    padding-left: 7vw;
-    font-size: 1.4vw;
+    font-size: 1.4em;
     font-weight: 600;
-    margin-bottom: 4vw;
+    margin-bottom: 2vw;
 }
 
 .vd-servs{
-    width: 100%;
-    margin: 3vw 0vw;
+    margin: 30px 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    vertical-align: middle;
 }
 
 .serv-card{
- width: 20%;
- margin: 0 auto;
- border: none;
+    border: none;
 }
 
 
 .serv-icon{
-    width: 10vw;
-    height: 10vw;
+    width: 10em;
+    height: 10em;
     align-self: center;
     background-size: contain;
+    border-radius: 50%;
+    transition: ease-out 0.3s;
+}
+
+.serv-icon:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 0px 25px var(--primary);
 }
 
 .serv-name{
-    font-size: 1.5vw;
+    word-wrap: break-word;
+    font-size: 1.2em;
     font-weight: 600;
-    padding: 2vw;
 }
 
 .vd-client{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    vertical-align: middle;
     background-image: url(./assets/our-clients.png);
     height: 70vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 120vw 70vw;
-    overflow: hidden;
 }
 
-.client-cnt{
-    padding: 4vw 5vw;
-    margin-top: 8vw;
-}
 
 .client-txt{
-    font-size: 4vw;
+    font-size: 4em;
     font-weight: 700;
     margin-bottom: 2vw;
 }
 
 .client-sub{
-    font-size: 1.8vw;
+    font-size: 1.4em;
     font-weight: 600;
 }
 
 .client-cards{
-    padding: 2vw ;
+    margin: 4em;
+    /* padding: 0; */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
-.vd-cardrow{
+/* .vd-cardrow{
     margin: 0vw;
     margin-bottom: 2vw;
     width: auto;
-}
+} */
 
 .vd-card{
-    height: 12vw;
-    padding: 0.5vw;
+    flex-basis: 15%;
+    height: auto;
+    margin: 5px;
 }
 
 .vd-card img{
     max-width: 100%;
     max-height: 100%;
-    transition: .5s;
+    transition: .1s;
 }
 
 
 .vd-card img:hover{
-    filter: invert(100%);
+    transform: scale(0.9,0.9);
 }
 
 
 .vd-reviews{
-    width: 100%;
-    padding: 4vw;
+    margin: 2em;
+    display: inline-flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+
+.review-cnt{
+    flex-basis: 80%;
 }
 
 .review-illus{
-    width: 30%;
-    float: right;
-    padding: 1vw;
+    flex-basis: 20%;
 }
 
 .review-illus img{
-    float: right;
     max-width: 100%;
     max-height: 100%;
 }
 
-.review-cnt{
-    width: 70%;
-    float: left;
-    margin-top: 6vw;
-}
+
 
 .review-txt{
-    font-size: 4vw;
+    font-size: 4em;
     font-weight: 700;
 }
 
@@ -366,21 +376,24 @@ body{
 }
 
 .vd-memories{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(./assets/our-memories.png);
     height: 70vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 120vw 70vw;
-    overflow: hidden;
 }
 
 .memo-cnt{
-    margin-top: 6vw;
-    padding: 2vw;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 .memo-txt{
-    font-size: 4vw;
+    font-size: 4em;
     font-weight: 700;
 }
 
@@ -412,31 +425,34 @@ body{
 }
 
 .view-more{
-    margin: 0 auto;
+    width: auto;
     background-color: white;
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: bold;
-    padding: 0.8vw 1vw;
+    padding: 14px;
     border: none;
     border-radius: 50px;
 }
 
 .vd-footer{
     background-color: var(--accent);
-    height: 28vw;
     width: 100%;
     padding: 2vw;
     margin-top: 4vw;
+    display: inline-flex;
+    flex-flow: column;
+
 }
 
 .foot-txt{
-    font-size: 4vw;
+    font-size: 2em;
     font-weight: 700;
 }
 
 .foot-container{
     display: inline-flex;
     flex-flow: row;
+    justify-content: space-between;
 }
 
 .foot-info{
@@ -456,20 +472,35 @@ body{
 .info-txt{
     margin: 1.4vw 0;
     margin-left: 2.8vw;
-    font-size: 1.6vw;
+    font-size: 1em;
     font-weight: 600;
 }
 
 .foot-links{
-    position: relative;
-    right: 4vw;
-    width: 60%;
+    text-align: center;
+    width: 10em;
     margin-top: 1vw;
+    background-color: var(--accent);
 }
 
 .foot-link{
     text-align: right;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     font-weight: 500;
     color: var(--primary);
 }
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px 
+@media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+*/
+
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 1300px) {
+
+  }
+  

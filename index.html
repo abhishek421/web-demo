@@ -10,7 +10,7 @@
 <body>
     
 
-    <div class="vd-navbar">
+    <div class="vd-navbar" id="navbar">
         <img src="./assets/logo.svg" id="navbar-logo">
         <div id="navbar-links">
             <p>Home</p>
@@ -76,19 +76,19 @@
             </div>
             <div class="card text-center serv-card">
                 <div class="card-img serv-icon" style="background-image: url(./assets/serv-ep.svg);"></div>
-                <div class="card-body serv-name">Engineering,
-                    Procurement
+                <div class="card-body serv-name">Engineering,<br>
+                    Procurement<br>
                     & Commissioning</div>
             </div>
             <div class="card text-center serv-card">
                 <div class="card-img serv-icon" style="background-image: url(./assets/serv-tm.svg);"></div>
                 <div class="card-body serv-name">Testing &
-                    Commissioning</div>
+                   <br> Commissioning</div>
             </div>
             <div class="card text-center serv-card">
                 <div class="card-img serv-icon" style="background-image: url(./assets/serv-om.svg);"></div>
                 <div class="card-body serv-name">Operation &
-                    Maintainance</div>
+                   <br> Maintainance</div>
             </div>
     </div>
 
@@ -98,22 +98,18 @@
             <h4 class="text-center client-sub w">Our team and our clients make great things happen together.</h4>
         </div>
         <div class="client-cards">
-            <div class="row vd-cardrow">
-                <div class="col-2 vd-card"><img src="./assets/clients/adani.png" alt="adani"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/lnt.png"   alt="l&t"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/tata.png" alt="tata"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/pidi.png" alt="pidilite"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/utc.png" alt="ultratech"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/hinznc.png" alt="hindustan zinc"></div>
-            </div>
-            <div class="row vd-cardrow">
-                <div class="col-2 vd-card"><img src="./assets/clients/abb.png" alt="abb"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/hdlc.png" alt="heilderberg cement"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/mpbg.png" alt="mp birla"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/proz.png" alt="prozeal"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/torp.png" alt="torrent power"></div>
-                <div class="col-2 vd-card"><img src="./assets/clients/vdnta.png" alt="vedanta"></div>
-            </div>
+                <div class="vd-card"><img src="./assets/clients/adani.png" alt="adani"></div>
+                <div class="vd-card"><img src="./assets/clients/lnt.png"   alt="l&t"></div>
+                <div class="vd-card"><img src="./assets/clients/tata.png" alt="tata"></div>
+                <div class="vd-card"><img src="./assets/clients/pidi.png" alt="pidilite"></div>
+                <div class="vd-card"><img src="./assets/clients/utc.png" alt="ultratech"></div>
+                <div class="vd-card"><img src="./assets/clients/hinznc.png" alt="hindustan zinc"></div>
+                <div class="vd-card"><img src="./assets/clients/abb.png" alt="abb"></div>
+                <div class="vd-card"><img src="./assets/clients/hdlc.png" alt="heilderberg cement"></div>
+                <div class="vd-card"><img src="./assets/clients/mpbg.png" alt="mp birla"></div>
+                <div class="vd-card"><img src="./assets/clients/proz.png" alt="prozeal"></div>
+                <div class="vd-card"><img src="./assets/clients/torp.png" alt="torrent power"></div>
+                <div class="vd-card"><img src="./assets/clients/vdnta.png" alt="vedanta"></div>
         </div>
     </div>
 
@@ -185,10 +181,7 @@
             <div class="gal-pic g-lg" style="background-image: url('./assets/p5.png');"></div>
             <div class="gal-pic g-sm" style="background-image: url('./assets/p6.png');"></div>
         </div>
-        <div style="width: 100%;display: inline-flex;
-        justify-content: space-between;">
         <button class="view-more p">View More</button>
-        </div>
     </div>
 
     <div class="vd-footer">
@@ -197,7 +190,7 @@
         </div>
         <div class="foot-container">
         <div class="foot-info">
-            <div class="info-icon" style="background-image: url('./assets/icons/pin.svg');"></div><div class="text-justify info-txt">Vedansh Infra Services Pvt. Ltd. F-16, Block II, Ambe Market,Near Rituraj Vatika, Chittorgarh, Rajasthan - 312001</div>
+            <div class="info-icon" style="background-image: url('./assets/icons/pin.svg');"></div><div class="info-txt">Vedansh Infra Services Pvt. Ltd. F-16, Block II, Ambe Market,Near Rituraj Vatika, Chittorgarh, Rajasthan - 312001</div>
             <div class="info-icon" style="background-image: url('./assets/icons/telephone.svg');"></div><div class="info-txt">Phone No. 01472-241007</div>
             <div class="info-icon" style="background-image: url('./assets/icons/mail.svg');"></div><div class="info-txt">vedansh.infragroup@gmail.com</div>
         </div>
@@ -211,7 +204,18 @@
         </div>
         </div>
     </div>
-
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-10em";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="main.js"></script>
