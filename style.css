@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #DCF3F5;
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
 }
 :root {
@@ -32,9 +32,13 @@ body{
     padding: 15px;
     position: sticky;
     top: 0;
-    background-image: linear-gradient(white 80%,transparent);
+    background-color: white;
     transition: top 0.3s;
 }
+.vd-navbar.scrolled {
+    background-color: #DCF3F5 !important;
+    transition: background-color 200ms linear;
+  }
 
 #navbar-logo{
     float: left;
@@ -57,14 +61,15 @@ body{
 
 .vd-main{
     width: 100%;
-    /* margin-top: 8%; */
-    /* margin-bottom: 30vw; */
-    padding: 5vw;
+    position: relative;
+    top: -90;
+    padding: 10vw 5vw 5vw 5vw;
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 100%;
+    background-color: #DCF3F5;
 }
 
 .main1{
@@ -106,17 +111,31 @@ body{
     height: 100%;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin: 0px 0px 14vw 0px;
 }
+
+.vd-bulb{
+    height: 12vw;
+    position: absolute;
+    top: 100%;
+    right: 1vw;
+}
+
+.vd-logo{
+    margin-top: 2vw;
+    width: 40vw;
+}
+
 .head-txt{
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 700;
     margin-bottom: 3vw;
 }
 
 .head-sub{
-    font-size: 2.4em;
+    font-size: 1.4em;
     font-weight: 600;
 }
 

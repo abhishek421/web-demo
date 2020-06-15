@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="vedansh-styling.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
 </head>
 <body>
     
@@ -32,10 +36,12 @@
     </div>
 
     <div class="vd-head">
+        <img src="./assets/photos/bulb.svg" alt="" class="vd-bulb">
         <div>
             <h1 class="text-center head-txt p">Growing <span class="s-bar">Together</span></h1>
             <h4 class="text-center head-sub p">At Vedansh, you tell your dream, <br> and our team of experts will turn it into reality.</h4>
         </div>
+        <img src="./assets/photos/detailed.svg" class="vd-logo" alt="">
     </div>
 
     <div class="vd-roots">
@@ -216,8 +222,12 @@
           prevScrollpos = currentScrollPos;
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-</body>
+    <script>
+        $(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".vd-navbar");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > screen.height);
+	});
+});
+    </script>
 </html>
