@@ -32,7 +32,7 @@ body{
     padding: 15px;
     position: sticky;
     top: 0;
-    background-image: linear-gradient(#dcf3f5 80%,transparent);
+    background-image: linear-gradient(white 80%,transparent);
     transition: top 0.3s;
 }
 
