@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #DCF3F5;
     font-family: 'Montserrat', sans-serif;
 }
 :root {
@@ -32,7 +32,7 @@ body{
     padding: 15px;
     position: sticky;
     top: 0;
-    background-image: linear-gradient(white 80%,transparent);
+    background-image: linear-gradient(#dcf3f5 80%,transparent);
     transition: top 0.3s;
 }
 
@@ -110,7 +110,7 @@ body{
     align-items: center;
 }
 .head-txt{
-    font-size: 5em;
+    font-size: 5vw;
     font-weight: 700;
     margin-bottom: 3vw;
 }
@@ -122,33 +122,37 @@ body{
 
 .s-bar{
     width: max-content;
-    border-bottom: solid 15px var(--secondary);
+    border-bottom: solid 10px var(--secondary);
 }
 
 .w-bar{
     width: max-content;
-    border-bottom: solid 15px white;
+    border-bottom: solid 10px white;
 }
 
 .vd-roots{
-    background-image: url(./assets/our-root.png);
-    height: 60vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 120vw 60vw;
-    overflow: hidden;
+    background-color: #02AFBE;
+    height: 30vw;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-flow: row;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 2vw;
+    margin: 100px 0;
 }
 
 .roots-cnt{
-    padding: 0vw 5vw 4vw 5vw;
+    padding: 4vw 5vw 4vw 5vw;
+}
+
+.roots-img{
+    height: 40vw;
+    width: auto;
+    filter: drop-shadow(0px 0px 10px black);
 }
 
 .roots-txt{
-    font-size: 4em;
+    font-size: 4vw;
     font-weight: 700;
     margin-bottom: 4vw;
 }
@@ -173,11 +177,12 @@ body{
     flex-flow: row;
     justify-content: space-around;
     padding: 2vw;
+    margin-top: 100px;
 }
 
 .serv-illus{
-    padding: 2em;
-    flex-basis: 35%;
+    height: 16em;
+    flex-basis: 40%;
 }
 
 .serv-illus img{
@@ -186,24 +191,24 @@ body{
 }
 
 .serv-cnt{
-    flex-basis: 65%;
+    flex-basis: 80%;
 }
 
 
 .serv-txt{
-    font-size: 4em;
+    font-size: 4vw;
     font-weight: 700;
     margin-bottom: 3vw;
 }
 
 .serv-sub{
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 2vw;
 }
 
 .vd-servs{
-    margin: 30px 0;
+    margin: 30px 0 120px 0;
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
@@ -211,17 +216,18 @@ body{
 }
 
 .serv-card{
+    background-color: #DCF3F5;
     border: none;
 }
 
 
 .serv-icon{
-    width: 10em;
-    height: 10em;
+    width: 7em;
+    height: 7em;
     align-self: center;
     background-size: contain;
     border-radius: 50%;
-    transition: ease-out 0.3s;
+    transition:ease-out 0.3s;
 }
 
 .serv-icon:hover{
@@ -237,19 +243,27 @@ body{
 
 .vd-client{
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    vertical-align: middle;
-    background-image: url(./assets/our-clients.png);
-    height: 70vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 120vw 70vw;
+    flex-flow: row-reverse;
+    margin: 100px 0;
+    padding: 2vw;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #02AFBE;
+    height: 35vw;
 }
 
+.client-cnt{
+    width: 70%;
+}
+
+.client-img{
+    height: 40vw;
+    width: auto;
+    filter: drop-shadow(0px 0px 10px black);
+}
 
 .client-txt{
-    font-size: 4em;
+    font-size: 3vw;
     font-weight: 700;
     margin-bottom: 2vw;
 }
@@ -260,8 +274,7 @@ body{
 }
 
 .client-cards{
-    margin: 4em;
-    /* padding: 0; */
+    margin: 2em;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -287,7 +300,7 @@ body{
 
 
 .vd-card img:hover{
-    transform: scale(0.9,0.9);
+    transform: scale(1.1,1.1);
 }
 
 
@@ -315,7 +328,7 @@ body{
 
 
 .review-txt{
-    font-size: 4em;
+    font-size: 4vw;
     font-weight: 700;
 }
 
@@ -393,7 +406,7 @@ body{
 }
 
 .memo-txt{
-    font-size: 4em;
+    font-size: 5vw;
     font-weight: 700;
 }
 
@@ -435,17 +448,18 @@ body{
 }
 
 .vd-footer{
-    background-color: var(--accent);
+    background-color: var(--primary);
     width: 100%;
     padding: 2vw;
-    margin-top: 4vw;
+    margin-top: 6vw;
     display: inline-flex;
     flex-flow: column;
-
+    position: relative;
+    bottom: 0;
 }
 
 .foot-txt{
-    font-size: 2em;
+    font-size: 2vw;
     font-weight: 700;
 }
 
@@ -470,24 +484,18 @@ body{
 }
 
 .info-txt{
-    margin: 1.4vw 0;
-    margin-left: 2.8vw;
+    color: white;
+    margin: 0.4vw 42px;
     font-size: 1em;
     font-weight: 600;
 }
 
 .foot-links{
-    text-align: center;
-    width: 10em;
-    margin-top: 1vw;
-    background-color: var(--accent);
+    overflow: hidden;
 }
 
 .foot-link{
-    text-align: right;
-    font-size: 1.4vw;
-    font-weight: 500;
-    color: var(--primary);
+    border-radius: 15px;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px 
