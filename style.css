@@ -111,9 +111,8 @@ body{
     height: 100%;
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0px 0px 14vw 0px;
 }
 
 .vd-bulb{
@@ -200,7 +199,7 @@ body{
 }
 
 .serv-illus{
-    height: 16em;
+    height: 18vw;
     flex-basis: 40%;
 }
 
@@ -235,7 +234,7 @@ body{
 }
 
 .serv-card{
-    background-color: #DCF3F5;
+    background-color: white;
     border: none;
 }
 
