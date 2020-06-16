@@ -32,17 +32,18 @@
         </div>
         <div class="main2">
             <img src="./assets/engineers-team.svg" class="main-illus" alt="Enginners on Site">
+            <img src="./assets/round-shadow.svg" alt="" class="main2-shadow">
         </div>
     </div>
 
     <div class="vd-head">
         <img src="./assets/photos/bulb.svg" alt="" class="vd-bulb">
         <img src="./assets/photos/detailed.svg" class="vd-logo" alt="">
+        <div class="a-circle c-l"></div><div class="a-circle c-r"></div>
         <div style="position: relative; top: -4vw;">
             <h1 class="text-center head-txt p">Growing <span class="s-bar">Together</span></h1>
             <h4 class="text-center head-sub p">At Vedansh, you tell your dream, <br> and our team of experts will turn it into reality.</h4>
         </div>
-        
     </div>
 
     <div class="vd-roots">
@@ -184,12 +185,12 @@
             <div class="text-center memo-txt w">Our <span class="w-bar">Memories</span></div>
         </div>
         <div class="memo-gallery">
-            <div class="gal-pic g-sm" style="background-image: url('./assets/p1.png');"></div>
-            <div class="gal-pic g-lg" style="background-image: url('./assets/p2.png');"></div>
-            <div class="gal-pic g-sm" style="background-image: url('./assets/p3.png');"></div>
-            <div class="gal-pic g-sm" style="background-image: url('./assets/p4.png');"></div>
-            <div class="gal-pic g-lg" style="background-image: url('./assets/p5.png');"></div>
-            <div class="gal-pic g-sm" style="background-image: url('./assets/p6.png');"></div>
+            <div class="gal-pic g-sm" style="background-image: url('./assets/photos/p1.png');"></div>
+            <div class="gal-pic g-lg" style="background-image: url('./assets/photos/p4.png');"></div>
+            <div class="gal-pic g-sm" style="background-image: url('./assets/photos/p3.png');"></div>
+            <div class="gal-pic g-sm" style="background-image: url('./assets/photos/p2.png');"></div>
+            <div class="gal-pic g-lg" style="background-image: url('./assets/photos/p5.png');"></div>
+            <div class="gal-pic g-sm" style="background-image: url('./assets/photos/p6.png');"></div>
         </div>
         <button class="view-more p">View More</button>
     </div>
@@ -227,7 +228,7 @@
         $(function () {
   $(document).scroll(function () {
 	  var $nav = $(".vd-navbar");
-	  $nav.toggleClass('scrolled', $(this).scrollTop() > screen.height);
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > screen.height-40);
 	});
 });
     </script>

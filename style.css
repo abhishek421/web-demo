@@ -29,7 +29,7 @@ body{
     display: inline-block;
     z-index: 10000;
     width: 100%;
-    padding: 15px;
+    padding: 0.6vw;
     position: sticky;
     top: 0;
     background-color: white;
@@ -42,7 +42,7 @@ body{
 
 #navbar-logo{
     float: left;
-    height: 60px;
+    height: 3.8vw;
     margin-left: 1vw;
 }
 
@@ -52,8 +52,8 @@ body{
 
 #navbar-links p{
     float: left;
-    padding: 10px 0;
-    font-size: 20px;
+    padding: 1vw 0;
+    font-size: 1.4vw;
     font-weight: 700;
     margin: 0px 1vw;
     color: var(--primary);
@@ -62,7 +62,7 @@ body{
 .vd-main{
     width: 100%;
     position: relative;
-    top: -90;
+    top: -5.2vw;
     padding: 10vw 5vw 5vw 5vw;
     display: flex;
     flex-flow: row;
@@ -79,9 +79,19 @@ body{
 }
 
 .main2{
-    padding: 2vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 3vw;
     width: 50%;
     float: right;
+}
+
+.main2-shadow{
+    position: relative;
+    top: 2vw;
+    width: 35vw;
+    filter: blur(10px);
 }
 
 .main-txt{
@@ -424,7 +434,7 @@ body{
 }
 
 .memo-txt{
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: 700;
 }
 
