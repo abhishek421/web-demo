@@ -135,6 +135,24 @@ body{
 .vd-logo{
     margin-top: 2vw;
     width: 40vw;
+    filter: drop-shadow(0px 0px 10px var(--secondary));
+    transition: ease-in-out;
+}
+
+.a-circle{
+    position: absolute;
+    background-color: var(--accent);
+    width: 15em;
+    height: 15em;
+    border-radius: 15em;
+}
+
+.c-l{
+    left: 2vw;
+}
+
+.c-r{
+    right: 2vw;
 }
 
 .head-txt{
@@ -167,6 +185,7 @@ body{
     align-items: center;
     padding: 2vw;
     margin: 100px 0;
+    box-shadow: 0px 0px 20px black;
 }
 
 .roots-cnt{
@@ -278,6 +297,7 @@ body{
     align-items: center;
     background-color: #02AFBE;
     height: 35vw;
+    box-shadow: 0px 0px 20px black;
 }
 
 .client-cnt{
