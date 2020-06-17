@@ -118,41 +118,17 @@ body{
 }
 
 .vd-head{
-    height: 100%;
+    height: 70%;
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
-.vd-bulb{
-    height: 12vw;
-    position: absolute;
-    top: 100%;
-    right: 1vw;
-}
-
 .vd-logo{
-    margin-top: 2vw;
     width: 40vw;
-    filter: drop-shadow(0px 0px 10px var(--secondary));
     transition: ease-in-out;
-}
-
-.a-circle{
-    position: absolute;
-    background-color: var(--accent);
-    width: 15em;
-    height: 15em;
-    border-radius: 15em;
-}
-
-.c-l{
-    left: 2vw;
-}
-
-.c-r{
-    right: 2vw;
+    margin-bottom: 2vw;
 }
 
 .head-txt{
@@ -162,8 +138,8 @@ body{
 }
 
 .head-sub{
-    font-size: 1.4em;
-    font-weight: 600;
+    font-size: 1.4vw;
+    font-weight: 400;
 }
 
 .s-bar{
@@ -205,8 +181,8 @@ body{
 }
 
 .roots-sub{
-    font-size: 1.4em;
-    font-weight: 600;
+    font-size: 1.4vw;
+    font-weight: 400;
     margin-bottom: 2vw;
 }
 
@@ -243,14 +219,14 @@ body{
 
 
 .serv-txt{
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 700;
     margin-bottom: 3vw;
 }
 
 .serv-sub{
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 1.4vw;
+    font-weight: 400;
     margin-bottom: 2vw;
 }
 
@@ -284,7 +260,7 @@ body{
 
 .serv-name{
     word-wrap: break-word;
-    font-size: 1.2em;
+    font-size: 1.4vw;
     font-weight: 600;
 }
 
@@ -317,8 +293,8 @@ body{
 }
 
 .client-sub{
-    font-size: 1.4em;
-    font-weight: 600;
+    font-size: 1.4vw;
+    font-weight: 400;
 }
 
 .client-cards{
@@ -442,10 +418,11 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url(./assets/our-memories.png);
-    height: 70vw;
+    height: 60vw;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 120vw 70vw;
+    background-size: 110vw 60vw;
+    margin-bottom: 10vw;
 }
 
 .memo-cnt{
@@ -459,7 +436,7 @@ body{
 }
 
 .memo-gallery{
-    width: 100%;
+    width: 80%;
     padding: 4vw;
     display: flex;
     flex-flow: wrap;
@@ -471,16 +448,16 @@ body{
 }
 
 .g-sm{
-    width: 30vw;
-    height: 14vw;
+    width: 22vw;
+    height: 12vw;
     background-position: center;
     background-size: cover;
     border-radius: 2vw;
 }
 
 .g-lg{
-    width: 25vw;
-    height: 14vw;
+    width: 20vw;
+    height: 12vw;
     background-size: cover;
     border-radius: 2vw;
 }
@@ -535,7 +512,12 @@ body{
     color: white;
     margin: 0.4vw 42px;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 400;
+}
+
+.info-txt a{
+    color: inherit;
+    text-decoration: none;
 }
 
 .foot-links{
@@ -545,6 +527,8 @@ body{
 .foot-link{
     border-radius: 15px;
 }
+
+
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px 
 @media screen and (min-width: 601px) {
