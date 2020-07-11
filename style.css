@@ -489,6 +489,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
+    background-color: var(--accent);
 }
 
 .smain1{
@@ -543,6 +544,19 @@ body{
     border-radius: 50px;
 }
 
+.s-container{
+    display: flex;
+    flex-flow: column;
+}
+.s-card:nth-of-type(even){
+    background-color: var(--accent);
+}
+.s-card{
+    height: 600px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
 
 /*------  SERVICES PAGE -------*/
 /*------  About -----*/
@@ -758,6 +772,74 @@ body{
 
 
 /*------  About -----*/
+
+.vd-contact{
+    width: 100%;
+    position: relative;
+    top: -5.2vw;
+    padding: 10vw 5vw 5vw 5vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    background-color: #DCF3F5;
+}
+
+input[type=text] {
+    border: none;
+    width: 120%;
+    margin: 8px 0;
+    border-bottom: 2px solid #02AFBE;
+    
+  }
+  input[type=email] {
+    border: none;
+    width: 120%;
+    margin: 8px 0;
+    border-bottom: 2px solid #02AFBE;
+  }
+  input[type=tel] {
+    border: none;
+    width: 120%;
+    margin: 8px 0;
+    border-bottom: 2px solid #02AFBE;
+  }
+  textarea{
+    margin: 8px 0;
+    width: 120%;
+      border: 2px solid #02AFBE;
+  }
+  input[type=submit] {
+    background-color: #02AFBE;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-top: 3vw;
+    width: 120%;
+    cursor: pointer;
+  }
+.vd-form{
+       display:inline-flex ;
+       margin-left: 6vw;
+       margin-right:3vw ;
+       margin-top: 5vw ;
+       align-items: center
+}
+.location{
+    align-items:right ;
+    margin-left:18vw ;
+    width: fit-content;
+    align-items: center;
+}
+.glocation{
+    
+    border: 2px groove #02AFBE;
+}
+
+
 .vd-footer{
     background-color: var(--primary);
     width: 100%;
