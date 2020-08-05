@@ -559,7 +559,7 @@ body{
 }
 
 /*------  SERVICES PAGE -------*/
-/* clients */
+/* clients-page */
 .cl-projects{
     display: flex;
     flex-flow: column;
@@ -588,6 +588,41 @@ body{
     padding: 20px;
 
 }
+.cl-clients{
+    background-color: #DCF3F5;
+    height: 900px;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    
+}
+.cl-clcards{
+    margin: 2em;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 20px;
+
+
+}
+.cl-logo{
+    flex-basis: 15%;
+    height: auto;
+    margin: 40px;
+}
+
+.cl-logo img{
+    max-width: 120%;
+    max-height: 120%;
+    transition: .1s;
+}
+
+
+.cl-logo img:hover{
+    transform: scale(1.1,1.1);
+}
+
+
 
 /* client-end */
 /*------  About -----*/
