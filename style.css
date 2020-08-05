@@ -560,6 +560,34 @@ body{
 
 /*------  SERVICES PAGE -------*/
 /* clients */
+.cl-projects{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.cl-progal{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.cl-prcard{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 10px;
+    width: 600px;
+    padding: 10px;
+}
+.cl-detail{
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    width: 30%;
+    word-break: break-all;
+    padding: 20px;
+
+}
 
 /* client-end */
 /*------  About -----*/
