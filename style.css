@@ -537,6 +537,7 @@ body{
     background-color: var(--secondary);
     color: white;
     font-size: 18px;
+    margin-top: 10px;
     font-weight: bold;
     padding: 14px;
     width: 160px;
