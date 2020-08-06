@@ -560,6 +560,72 @@ body{
 }
 
 /*------  SERVICES PAGE -------*/
+/* clients-page */
+.cl-projects{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.cl-progal{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.cl-prcard{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 10px;
+    width: 600px;
+    padding: 10px;
+}
+.cl-detail{
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    width: 30%;
+    word-break: break-all;
+    padding: 20px;
+
+}
+.cl-clients{
+    background-color: #DCF3F5;
+    height: 900px;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    
+}
+.cl-clcards{
+    margin: 2em;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 20px;
+
+
+}
+.cl-logo{
+    flex-basis: 15%;
+    height: auto;
+    margin: 40px;
+}
+
+.cl-logo img{
+    max-width: 120%;
+    max-height: 120%;
+    transition: .1s;
+}
+
+
+.cl-logo img:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+
+/* client-end */
 /*------  About -----*/
 
 
