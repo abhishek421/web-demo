@@ -13,6 +13,22 @@
 </body>
 </head>
 <body>
+    <div id="vd-mobile" class="vd-overlay">
+        <a href="javascript:void(0)" class="vd-closebtn" onclick="closeNav()">&times;</a>
+        <div class="vd-overlay-content">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <div class="vd-mobilenav" id="navbar">
+        <img src="./assets/logo.svg" id="navbar-logo">
+        <div id="navbar-links">
+
+            <span style="cursor:pointer" id="openbtn" onclick="openNav()">&#9776;</span>
+          
+        </div>
+    </div>
+
     
 
     <div class="vd-navbar" id="navbar">
@@ -178,5 +194,17 @@
 	  $nav.toggleClass('scrolled', $(this).scrollTop() > screen.height-40);
 	});
 });
+    </script>
+    
+<script>
+    function openNav() {
+      document.getElementById("vd-mobile").style.width = "100%";
+      document.getElementById("openbtn").style.display = "none";
+    }
+    
+    function closeNav() {
+      document.getElementById("vd-mobile").style.width = "0%";
+      document.getElementById("openbtn").style.display = "inline";
+    }
     </script>
 </html>
